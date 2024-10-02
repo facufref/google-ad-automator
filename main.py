@@ -37,7 +37,7 @@ def main():
 
         country_code_dropdown = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div.sc-select")))
         country_code_dropdown.click()
-        time.sleep(5)  # TODO: Replace with wait for dropdown to open
+        time.sleep(10)  # TODO: Replace with wait for dropdown to open
         selected_option = wait.until(EC.element_to_be_clickable((By.XPATH, '//li[contains(text(), "United States (+1)")]')))
         selected_option.click()
 
